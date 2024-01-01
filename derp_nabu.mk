@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # Inherit some common Awaken stuff.
-$(call inherit-product, vendor/awaken/config/common_full_tablet_wifionly.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/derp/config/common_full_tablet_wifionly.mk)
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
-PRODUCT_NAME := awaken_nabu
+PRODUCT_NAME := derp_nabu
 PRODUCT_DEVICE := nabu
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
